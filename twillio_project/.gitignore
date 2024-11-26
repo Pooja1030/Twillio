@@ -1,1 +1,22 @@
+# Ignore virtual environment directories
+venv/
+env/
+.env/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore package metadata
+*.egg-info/
+
+# Ignore log files
+*.log
+
+# Ignore environment variables and secret files
 .env
+
+# Ignore system files (macOS, Windows, etc.)
+.DS_Store
+Thumbs.db
