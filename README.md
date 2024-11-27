@@ -28,7 +28,7 @@ To run the Twillio Project locally, follow these steps:
    ```
 2. **Create a Virtual Environment
 
-For better project management, create a virtual environment to isolate your dependencies.
+   For better project management, create a virtual environment to isolate your dependencies.
 
    Windows:
     ```bash
@@ -55,7 +55,7 @@ For better project management, create a virtual environment to isolate your depe
     ```
 4. **Set Up Twillio Credentials:**
 
-Create a .env file in the root of the project and add your Twillio credentials:
+   Create a .env file in the root of the project and add your Twillio credentials:
   ```bash
   TWILIO_ACCOUNT_SID = 'your_account_sid'
   TWILIO_AUTH_TOKEN = 'your_auth_token'
@@ -68,7 +68,7 @@ Create a .env file in the root of the project and add your Twillio credentials:
 
 5. **Apply Migrations:**
  
-Since this is a Django project, apply the migrations for the database:
+   Since this is a Django project, apply the migrations for the database:
 
   ```bash
 python manage.py migrations
@@ -166,7 +166,7 @@ Body (JSON):
 ```
 
 
-Technologies Used
+**Technologies Used:**
 Twilio API: Used for sending OTP via SMS.
 Django: Backend web framework for handling requests.
 Django Rest Framework (DRF): Used for building the API.
