@@ -1,4 +1,4 @@
-# Twillio
+   `111q# Twillio
 
 This project demonstrates how to send OTP (One-Time Password) messages using the Twilio API in a Django Rest Framework (DRF) application. The backend allows you to send OTP via SMS to any verified phone number using Twilio's messaging service.
 ## Features
@@ -30,21 +30,21 @@ To run the Twillio Project locally, follow these steps:
 
    For better project management, create a virtual environment to isolate your dependencies.
 
-   Windows:
+   **Windows**:
     ```bash
     python -m venv venv
     ```
-   Linux/macOs:
+   **Linux/macOs**:
     ```bash
     python3 -m venv venv
     ```
 
    Activate the virtual environment:
-   Windows:
+   **Windows**:
      ```bash
      venv\Scripts\activate
      ```
-   Linux/macOs:
+   **Linux/macOs**:
      ```bash
      source venv/bin/activate
      ```
@@ -55,7 +55,7 @@ To run the Twillio Project locally, follow these steps:
       ```
 ### 4. Set Up Twillio Credentials:
 
-   **Create a .env file in the root of the project and add your Twillio credentials:**
+**Create a .env file in the root of the project and add your Twillio credentials:**
   ```bash
   TWILIO_ACCOUNT_SID = 'your_account_sid'
   TWILIO_AUTH_TOKEN = 'your_auth_token'
@@ -70,14 +70,14 @@ To run the Twillio Project locally, follow these steps:
  
    **Since this is a Django project, apply the migrations for the database:**
 
-  ```bash
-python manage.py migrations
-python manage.py migrate
-```
+     ```bash
+     python manage.py migrations
+     python manage.py migrate
+     ```
 
 ### 6. Run the Application:
     ```bash
-    python manage.py runserver
+     python manage.py runserver
     ```
 
 ### 7: Send OTP (Using Postman or any API Client):
