@@ -51,8 +51,8 @@ To run the Twillio Project locally, follow these steps:
     
 ## 3. Install Dependencies:
      ```bash
-   pip install -r requirements.txt
-   ```
+     pip install -r requirements.txt
+     ```
 ## 4. Set Up Twillio Credentials:
 
 **Create a .env file in the root of the project and add your Twillio credentials:**
