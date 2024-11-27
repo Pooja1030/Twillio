@@ -51,7 +51,7 @@ To run the Twillio Project locally, follow these steps:
     
 ## 3. **Install Dependencies**:
  ```bash
-    pip install -r requirements.txt
+ pip install -r requirements.txt
   ```
 
     
@@ -73,11 +73,11 @@ To run the Twillio Project locally, follow these steps:
 ## 5. Apply Migrations:
  
    **Since this is a Django project, apply the migrations for the database:**
-
-     ```bash
-     python manage.py migrations
-     python manage.py migrate
-     ```
+ ```bash
+ python manage.py migrations
+ python manage.py migrate
+  ```
+  
 
 ## 6. Run the Application:
     ```bash
