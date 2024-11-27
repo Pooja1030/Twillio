@@ -80,9 +80,9 @@ To run the Twillio Project locally, follow these steps:
   
 
 ## 6. Run the Application:
-    ```bash
-     python manage.py runserver
-    ```
+```bash
+python manage.py runserver
+```
 
 ## 7: Send OTP (Using Postman or any API Client):
   **Request Type**: POST
