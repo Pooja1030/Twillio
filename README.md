@@ -26,7 +26,7 @@ To run the Twillio Project locally, follow these steps:
    ```bash
    cd Twillio
    ```
-2. **Create a Virtual Environment
+2. **Create a Virtual Environment:**
 
    For better project management, create a virtual environment to isolate your dependencies.
 
@@ -55,20 +55,20 @@ To run the Twillio Project locally, follow these steps:
     ```
 4. **Set Up Twillio Credentials:**
 
-   Create a .env file in the root of the project and add your Twillio credentials:
+   **Create a .env file in the root of the project and add your Twillio credentials:**
   ```bash
   TWILIO_ACCOUNT_SID = 'your_account_sid'
   TWILIO_AUTH_TOKEN = 'your_auth_token'
   TWILIO_PHONE_NUMBER = 'your_twilio_phone_number'
   ```
 
-  Account SID: Found in your Twilio console.
-  Auth Token: Available in your Twilio console.
-  Twilio Phone Number: Your Twilio SMS-enabled phone number.
+  **Account SID:** Found in your Twilio console.
+  **Auth Token:** Available in your Twilio console.
+  **Twilio Phone Number:** Your Twilio SMS-enabled phone number.
 
 5. **Apply Migrations:**
  
-   Since this is a Django project, apply the migrations for the database:
+   **Since this is a Django project, apply the migrations for the database:**
 
   ```bash
 python manage.py migrations
@@ -81,9 +81,9 @@ python manage.py migrate
     ```
 
 7: **Send OTP (Using Postman or any API Client):**
-  Request Type: POST
-  Endpoint: /send-otp/
-  Body (JSON format):
+  **Request Type:** POST
+  **Endpoint:** /send-otp/
+  **Body (JSON format):**
 
 ```json
 
@@ -92,49 +92,49 @@ python manage.py migrate
 }
 ```
 
-Where:
-to: The phone number you want to send the OTP to (must be a verified Twilio number).
+**Where:**
+**otp:** The phone number you want to send the OTP to (must be a verified Twilio number).
 
 8: **Verify OTP (Using Postman or any API Client):**
-Request Type: POST
-Endpoint: /verify-otp/
-Body (JSON format):
+**Request Type:** POST
+**Endpoint:** /verify-otp/
+**Body (JSON format):**
 ```json
 {
   "otp": "generated_otp"
 }
 ```
 
-Where:
-otp: The OTP sent to the phone number in the previous request.
+**Where:**
+**otp:** The OTP sent to the phone number in the previous request.
 
-API Endpoints
-1. /send-otp/
-Method: POST
-Description: Sends a generated OTP to the specified phone number.
-Request Body:
+**API Endpoints**
+1. **/send-otp/**
+**Method:** POST
+**Description:** Sends a generated OTP to the specified phone number.
+**Request Body:**
 ```json
 {
   "to": "recipient_phone_number"
 }
 ```
-Response:
+**Response:**
 ```json
 {
   "message": "OTP sent successfully."
 }
 ```
 
-2. /verify-otp/
-Method: POST
-Description: Verifies the OTP sent to the phone number.
-Request Body:
+2. **/verify-otp/**
+**Method:** POST
+**Description:** Verifies the OTP sent to the phone number.
+**Request Body:**
 ```json
 {
   "otp": "generated_otp"
 }
 ```
-Response:
+**Response:**
 ```json
 
 {
@@ -142,22 +142,22 @@ Response:
 }
 ```
 
-Troubleshooting
-Same "From" and "To" numbers: Ensure the phone number you're sending the OTP to is different from the Twilio number you have. It should be a verified number in your Twilio account.
-Blocked Push: If your push is blocked due to secret scanning, remove the Twilio credentials from your Git history and re-commit the changes.
+**Troubleshooting**
+**Same "From" and "To" numbers:** Ensure the phone number you're sending the OTP to is different from the Twilio number you have. It should be a verified number in your Twilio account.
+**Blocked Push:** If your push is blocked due to secret scanning, remove the Twilio credentials from your Git history and re-commit the changes.
 
-Example Postman Request for Sending OTP
-POST: http://localhost:8000/send-otp/
-Body (JSON):
+**Example Postman Request for Sending OTP**
+**POST:** http://localhost:8000/send-otp/
+**Body (JSON):**
 ```json
 
 {
   "to": "+1234567890"
 }
 ```
-Example Postman Request for Verifying OTP
-POST: http://localhost:8000/verify-otp/
-Body (JSON):
+**Example Postman Request for Verifying OTP**
+**POST:** http://localhost:8000/verify-otp/
+**Body (JSON):**
 ```json
 
 {
@@ -167,8 +167,8 @@ Body (JSON):
 
 
 **Technologies Used:**
-Twilio API: Used for sending OTP via SMS.
-Django: Backend web framework for handling requests.
-Django Rest Framework (DRF): Used for building the API.
-Dotenv: For managing environment variables securely.
-Postman: For testing the API.
+**Twilio API:** Used for sending OTP via SMS.
+**Django:** Backend web framework for handling requests.
+**Django Rest Framework (DRF):** Used for building the API.
+**Dotenv:** For managing environment variables securely.
+**Postman:** For testing the API.
