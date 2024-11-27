@@ -167,8 +167,8 @@ python manage.py migrate
 
 
 **Technologies Used:**
-**Twilio API:** Used for sending OTP via SMS.
-**Django:** Backend web framework for handling requests.
-**Django Rest Framework (DRF):** Used for building the API.
-**Dotenv:** For managing environment variables securely.
-**Postman:** For testing the API.    
+Twilio API: Used for sending OTP via SMS.
+Django: Backend web framework for handling requests.
+Django Rest Framework (DRF): Used for building the API.
+Dotenv: For managing environment variables securely.
+Postman: For testing the API.    
