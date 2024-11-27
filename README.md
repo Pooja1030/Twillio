@@ -34,16 +34,19 @@ To run the Twillio Project locally, follow these steps:
     ```bash
     python -m venv venv
     ```
+
    **Linux/macOs**:
     ```bash
     python3 -m venv venv
     ```
 
    Activate the virtual environment:
+   
    **Windows**:
      ```bash
      venv\Scripts\activate
      ```
+
    **Linux/macOs**:
      ```bash
      source venv/bin/activate
@@ -67,7 +70,9 @@ To run the Twillio Project locally, follow these steps:
   ```
 
   **Account SID**: Found in your Twilio console.
+  
   **Auth Token**: Available in your Twilio console.
+  
   **Twilio Phone Number**: Your Twilio SMS-enabled phone number.
 
 ## 5. Apply Migrations:
@@ -86,7 +91,9 @@ python manage.py runserver
 
 ## 7: Send OTP (Using Postman or any API Client):
   **Request Type**: POST
+  
   **Endpoint**: /send-otp/
+  
   **Body (JSON format)**:
 
 ```json
@@ -97,11 +104,14 @@ python manage.py runserver
 ```
 
 **Where:**
+
 **otp**: The phone number you want to send the OTP to (must be a verified Twilio number).
 
 ## 8: Verify OTP (Using Postman or any API Client):
 **Request Type**: POST
+
 **Endpoint**: /verify-otp/
+
 **Body (JSON format)**:
 ```json
 {
@@ -110,12 +120,15 @@ python manage.py runserver
 ```
 
 **Where:**
+
 **otp**: The OTP sent to the phone number in the previous request.
 
 ## API Endpoints 
 ## 1. /send-otp/
 **Method**: POST
+
 **Description**: Sends a generated OTP to the specified phone number.
+
 **Request Body**:
 ```json
 {
@@ -131,7 +144,9 @@ python manage.py runserver
 
 ## 2. /verify-otp/
 **Method**: POST
+
 **Description**: Verifies the OTP sent to the phone number.
+
 **Request Body**:
 ```json
 {
@@ -148,10 +163,12 @@ python manage.py runserver
 
 ## Troubleshooting
 **Same "From" and "To" numbers**: Ensure the phone number you're sending the OTP to is different from the Twilio number you have. It should be a verified number in your Twilio account.
+
 **Blocked Push**: If your push is blocked due to secret scanning, remove the Twilio credentials from your Git history and re-commit the changes.
 
 ## Example Postman Request for Sending OTP
 **POST**: http://localhost:8000/send-otp/
+
 **Body (JSON)**:
 ```json
 {
@@ -160,6 +177,7 @@ python manage.py runserver
 ```
 ## Example Postman Request for Verifying OTP
 **POST**: http://localhost:8000/verify-otp/
+
 **Body (JSON)**:
 ```json
 
