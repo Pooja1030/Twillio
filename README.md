@@ -3,7 +3,7 @@
 This project demonstrates how to send OTP (One-Time Password) messages using the Twilio API in a Django Rest Framework (DRF) application. The backend allows you to send OTP via SMS to any verified phone number using Twilio's messaging service.
 ## Features
 
-- **OTP Generation:** : Generates a unique OTP for each user request
+- **OTP Generation:** Generates a unique OTP for each user request
 - **Twillio Integration:** Sends OTP via Twilio's SMS API.
 - **Verifed Phone Numbers:** Ensures OTP is sent to a phone number that's verified with Twilio.
 - **Secure Credential Handling:** Uses environment variables for secure handling of Twilio credentials.
